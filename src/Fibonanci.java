@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
 public class Fibonanci {
-    public static int fibonanci(int n, int firstNum, int secNum){
-        if(n <= 1){
+    public static int fibonanci(int numberNo, int firstNum, int secNum){
+        if(numberNo <= 1){
             return firstNum;
         }else{
-            return fibonanci(n-1,secNum, firstNum+secNum );
+            return fibonanci(numberNo-1,secNum, firstNum+secNum );
         }
     }
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Enter Fibonacci sequence numbers : ");
-        int n = myScanner.nextInt();
+        int numberNo = myScanner.nextInt();
         myScanner.close();
 
-        System.out.println("Fibonanci no."+ n + " is " + fibonanci(n, 0, 1));
+        System.out.println("Fibonanci no."+ numberNo + " is " + fibonanci(numberNo, 0, 1));
     }
 }

@@ -8,8 +8,8 @@ public class SimpleCalc {
         System.out.print("Input Number 2 : ");
         float number2 = myInput.nextFloat();
         System.out.print("Input The operator (+ - * / %) : ");
-        String theOperation2 = myInput.nextLine();
         String theOperation = myInput.nextLine();
+        theOperation = myInput.nextLine();
         myInput.close();
         
         switch (theOperation) {
